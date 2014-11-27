@@ -1,0 +1,11 @@
+O usuário tem uma conta no sistema.
+
+O sistema sugere amigos para o usuário com base nas áreas de interesse do usuário.
+
+O usuário pode criar grupos e definir regras (áreas de conhecimento necessárias) para entrar no grupo.
+
+O sistema sugere grupos para o usuário com base nas áreas de interesse do usuário.
+
+Um usuário pode entrar num grupo (se tornar membro) e sair (deixar de ser membro) quando quiser.
+
+
