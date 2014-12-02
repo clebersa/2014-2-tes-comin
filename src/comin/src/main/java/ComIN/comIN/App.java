@@ -1,7 +1,5 @@
 package ComIN.comIN;
 
-import javax.management.relation.Relation;
-
 import ontologias.Acm;
 import ontologias.Foaf;
 import ontologias.Relationship;
@@ -16,9 +14,7 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.sparql.vocabulary.FOAF;
 import com.hp.hpl.jena.util.FileManager;
 
 public class App 
@@ -100,7 +96,7 @@ public class App
 		System.out.println();
 		
         
-        //model.write(System.out);
+        model.write(System.out);
    
     }
 }
