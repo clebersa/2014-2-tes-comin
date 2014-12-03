@@ -7,6 +7,7 @@ import tesAct.model.Email;
 import tesAct.model.Name;
 import tesAct.model.Organization;
 import tesAct.model.Profile;
+import tesAct.model.Telephone;
 
 public class Activity01 {
 
@@ -23,6 +24,7 @@ public class Activity01 {
 		cleber.setOrganization(new Organization("UFG",
 				"Assistente de Desenvolvimento"));
 		cleber.setGender("Masculino");
+		cleber.setTelephone (new Telephone("fixo", "39244457"));
 		ProfileController cleberProfileController = new ProfileController(
 				cleber);
 		modelController.addProfile(cleberProfileController);
@@ -32,6 +34,7 @@ public class Activity01 {
 		larissa.setNickname("Sem Apelido");
 		larissa.setBirthDate("09/12/1990");
 		larissa.setEmail(new Email("gmail", "larissamean@gmail.com"));
+		larissa.setTelephone(new Telephone ("cel", "9502575"));
 		larissa.setAddress(new Address("R 22", "Goiânia", "GO", "Brasil",
 				"74690-470"));
 		larissa.setOrganization(new Organization("UFG", "Estudante"));
@@ -45,6 +48,7 @@ public class Activity01 {
 		leticia.setNickname("Big");
 		leticia.setBirthDate("11/03/1992");
 		leticia.setEmail(new Email("gmail", "leticianb1@gmail.com"));
+		leticia.setTelephone (new Telephone ("cel", "93924664"));
 		leticia.setAddress(new Address("Rua R 22", "Goiânia", "GO", "Brasil",
 				"74690-470"));
 		leticia.setOrganization(new Organization("Multidata",
@@ -59,6 +63,7 @@ public class Activity01 {
 		samuel.setNickname("Samuca");
 		samuel.setBirthDate("13/04/1993");
 		samuel.setEmail(new Email("gmail", "almeida.samuel.junio@gmail.com"));
+		samuel.setTelephone(new Telephone ("fixo", "33333333"));
 		samuel.setAddress(new Address("Av. Contorno, 109", "Goiânia", "Goiás",
 				"Brasil", "74690-020"));
 		samuel.setOrganization(new Organization("UFG", "Estudante"));

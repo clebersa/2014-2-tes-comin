@@ -1,128 +1,56 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.semanticweb.org/ontologies/2013/10/foaf.owl#"
-    xmlns:j.1="http://www.w3.org/2006/vcard/ns#" > 
-  <rdf:Description rdf:nodeID="A0">
-    <j.1:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.1:label>
-    <j.1:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">almeida.samuel.junio@gmail.com</j.1:value>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <j.1:role rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estudante</j.1:role>
-    <j.1:organization-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UFG</j.1:organization-name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://Letícia/">
-    <j.1:organization rdf:nodeID="A2"/>
-    <j.1:email rdf:nodeID="A3"/>
-    <j.1:adr rdf:nodeID="A4"/>
-    <j.1:hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feminino</j.1:hasGender>
-    <j.1:bday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1992-11-03T02:00:00Z</j.1:bday>
-    <j.1:nickname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big</j.1:nickname>
-    <j.1:name rdf:nodeID="A5"/>
-    <j.1:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Letícia Nunes Borges</j.1:fn>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <j.1:street-address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R 22</j.1:street-address>
-    <j.1:locality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goiânia</j.1:locality>
-    <j.1:region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</j.1:region>
-    <j.1:country-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brasil</j.1:country-name>
-    <j.1:postal-code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74690-470</j.1:postal-code>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <j.1:role rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assistente de Desenvolvimento</j.1:role>
-    <j.1:organization-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UFG</j.1:organization-name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <j.1:street-address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Av. Contorno, 109</j.1:street-address>
-    <j.1:locality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goiânia</j.1:locality>
-    <j.1:region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goiás</j.1:region>
-    <j.1:country-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brasil</j.1:country-name>
-    <j.1:postal-code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74690-020</j.1:postal-code>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <j.1:additional-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nunes</j.1:additional-name>
-    <j.1:family-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Siqueira</j.1:family-name>
-    <j.1:given-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larissa Angélica</j.1:given-name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <j.1:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.1:label>
-    <j.1:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larissamean@gmail.com</j.1:value>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <j.1:additional-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Borges</j.1:additional-name>
-    <j.1:family-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nunes</j.1:family-name>
-    <j.1:given-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Letícia</j.1:given-name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A11">
-    <j.1:role rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estudante</j.1:role>
-    <j.1:organization-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UFG</j.1:organization-name>
-  </rdf:Description>
+    xmlns:j.0="http://www.w3.org/2006/vcard/ns#" > 
   <rdf:Description rdf:about="http://Cleber/">
-    <j.1:organization rdf:nodeID="A7"/>
-    <j.1:email rdf:nodeID="A12"/>
-    <j.1:adr rdf:nodeID="A13"/>
-    <j.1:hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</j.1:hasGender>
-    <j.1:bday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1993-03-07T03:00:00Z</j.1:bday>
-    <j.1:nickname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clebin</j.1:nickname>
-    <j.1:name rdf:nodeID="A14"/>
-    <j.1:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleber de Souza Alcântara</j.1:fn>
+    <j.0:telephone rdf:nodeID="A0"/>
+    <j.0:email rdf:nodeID="A1"/>
+    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleber de Souza Alcântara</j.0:fn>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <j.1:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.1:label>
-    <j.1:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leticianb1@gmail.com</j.1:value>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <j.1:street-address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rua R 22</j.1:street-address>
-    <j.1:locality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goiânia</j.1:locality>
-    <j.1:region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</j.1:region>
-    <j.1:country-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brasil</j.1:country-name>
-    <j.1:postal-code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74690-470</j.1:postal-code>
+  <rdf:Description rdf:nodeID="A0">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixo</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">39244457</j.0:value>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A2">
-    <j.1:role rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estagiária de Desenvolvimento Java</j.1:role>
-    <j.1:organization-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multidata</j.1:organization-name>
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixo</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33333333</j.0:value>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A15">
-    <j.1:additional-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pires</j.1:additional-name>
-    <j.1:family-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Almeida</j.1:family-name>
-    <j.1:given-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuel Junio</j.1:given-name>
+  <rdf:Description rdf:about="http://Letícia/">
+    <j.0:telephone rdf:nodeID="A3"/>
+    <j.0:email rdf:nodeID="A4"/>
+    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Letícia Nunes Borges</j.0:fn>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <j.1:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.1:label>
-    <j.1:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleber.93cd@gmail.com</j.1:value>
+  <rdf:Description rdf:nodeID="A5">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larissamean@gmail.com</j.0:value>
   </rdf:Description>
   <rdf:Description rdf:about="http://Larissa.Angélica/">
-    <j.1:organization rdf:nodeID="A11"/>
-    <j.1:email rdf:nodeID="A10"/>
-    <j.1:adr rdf:nodeID="A6"/>
-    <j.1:hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feminino</j.1:hasGender>
-    <j.1:bday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1990-09-12T03:00:00Z</j.1:bday>
-    <j.1:nickname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sem Apelido</j.1:nickname>
-    <j.1:name rdf:nodeID="A9"/>
-    <j.1:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larissa Angélica Siqueira Nunes</j.1:fn>
+    <j.0:telephone rdf:nodeID="A6"/>
+    <j.0:email rdf:nodeID="A5"/>
+    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larissa Angélica Siqueira Nunes</j.0:fn>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A13">
-    <j.1:street-address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rua R 22</j.1:street-address>
-    <j.1:locality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goiânia</j.1:locality>
-    <j.1:region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</j.1:region>
-    <j.1:country-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brasil</j.1:country-name>
-    <j.1:postal-code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74690-470</j.1:postal-code>
+  <rdf:Description rdf:nodeID="A6">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cel</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9502575</j.0:value>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A14">
-    <j.1:additional-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alcântara</j.1:additional-name>
-    <j.1:family-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Souza</j.1:family-name>
-    <j.1:given-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleber</j.1:given-name>
+  <rdf:Description rdf:nodeID="A4">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leticianb1@gmail.com</j.0:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">almeida.samuel.junio@gmail.com</j.0:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleber.93cd@gmail.com</j.0:value>
   </rdf:Description>
   <rdf:Description rdf:about="http://Samuel.Junio/">
-    <j.1:bday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-01-04T02:00:00Z</j.1:bday>
-    <j.1:email rdf:nodeID="A0"/>
-    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#D_2_11_3_Languages"/>
-    <j.1:hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</j.1:hasGender>
-    <j.1:organization rdf:nodeID="A1"/>
-    <j.1:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuel Junio de Almeida Pires</j.1:fn>
-    <j.1:adr rdf:nodeID="A8"/>
-    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#A_1_Introductory_And_Survey"/>
-    <j.1:nickname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuca</j.1:nickname>
-    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#A_0_1_Conference_Proceedings"/>
-    <j.1:name rdf:nodeID="A15"/>
+    <j.0:telephone rdf:nodeID="A2"/>
+    <j.0:email rdf:nodeID="A7"/>
+    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuel Junio de Almeida Pires</j.0:fn>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cel</j.0:label>
+    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">93924664</j.0:value>
   </rdf:Description>
 </rdf:RDF>
