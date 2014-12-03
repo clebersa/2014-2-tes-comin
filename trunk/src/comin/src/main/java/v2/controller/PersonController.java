@@ -7,7 +7,10 @@ import tesAct.ontologies.Relationship;
 
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.NodeIterator;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.rdf.model.Statement;
+import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 public class PersonController {
 	private Resource person;
@@ -55,11 +58,19 @@ public class PersonController {
 		person.addProperty(Foaf.member, group);
 	}
 	
-	public void addPersonWouldLikeToKnow(Resource wouldLikeToKnow){
-		person.addProperty(Relationship.wouldLikeToKnow, wouldLikeToKnow);
+	public void addPersonsWouldLikeToKnow(Resource group){
+		 StmtIterator members = group.listProperties(Foaf.member);
+		 while(members.hasNext()){
+			 Statement statement = members.next();
+			 Resource member = statement.getObject().asResource();
+			 if(member != person){
+				 person.addProperty(Relationship.wouldLikeToKnow, member);
+			 }
+		 }
 	}
 	
-	public void addKnown(Resource known){
+	public void addKnown(Resource known, Model model){
+		model.removeAll(person, Relationship.wouldLikeToKnow, known);
 		person.addProperty(Foaf.knows, known);
 	}
 }
