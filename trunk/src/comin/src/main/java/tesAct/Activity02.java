@@ -8,6 +8,7 @@ import tesAct.model.Email;
 import tesAct.model.Name;
 import tesAct.model.Organization;
 import tesAct.model.Profile;
+import tesAct.model.Telephone;
 import tesAct.ontologies.Acm;
 
 public class Activity02 {
@@ -20,6 +21,7 @@ public class Activity02 {
 		cleber.setNickname("Clebin");
 		cleber.setBirthDate("03/07/1993");
 		cleber.setEmail(new Email("gmail", "cleber.93cd@gmail.com"));
+		
 		cleber.setAddress(new Address("Rua R 22", "Goiânia", "GO", "Brasil",
 				"74690-470"));
 		cleber.setOrganization(new Organization("UFG",
@@ -34,6 +36,7 @@ public class Activity02 {
 		larissa.setNickname("Sem Apelido");
 		larissa.setBirthDate("09/12/1990");
 		larissa.setEmail(new Email("gmail", "larissamean@gmail.com"));
+	
 		larissa.setAddress(new Address("R 22", "Goiânia", "GO", "Brasil",
 				"74690-470"));
 		larissa.setOrganization(new Organization("UFG", "Estudante"));
@@ -47,6 +50,7 @@ public class Activity02 {
 		leticia.setNickname("Big");
 		leticia.setBirthDate("11/03/1992");
 		leticia.setEmail(new Email("gmail", "leticianb1@gmail.com"));
+	
 		leticia.setAddress(new Address("Rua R 22", "Goiânia", "GO", "Brasil",
 				"74690-470"));
 		leticia.setOrganization(new Organization("Multidata",
@@ -61,6 +65,7 @@ public class Activity02 {
 		samuel.setNickname("Samuca");
 		samuel.setBirthDate("13/04/1993");
 		samuel.setEmail(new Email("gmail", "almeida.samuel.junio@gmail.com"));
+	
 		samuel.setAddress(new Address("Av. Contorno, 109", "Goiânia", "Goiás",
 				"Brasil", "74690-020"));
 		samuel.setOrganization(new Organization("UFG", "Estudante"));

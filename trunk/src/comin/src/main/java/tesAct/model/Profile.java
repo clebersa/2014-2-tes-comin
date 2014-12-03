@@ -43,18 +43,17 @@ public class Profile {
 	 * The e-mail.
 	 */
 	private Email email;
+	
+	private Telephone telephone;
 
 	/**
 	 * The organization.
 	 */
 	private Organization organization;
 
-	/**
-	 * Gets the profile name.
-	 * 
-	 * @return The profile name.
-	 */
 	private ArrayList<Interest> interests = new ArrayList<Interest>();
+
+	
 	
 	
 	public Name getName() {
@@ -222,5 +221,17 @@ public class Profile {
 	public void setOrganization(Organization organization) {
 		this.organization = organization;
 	}
+
+	
+	public Telephone getTelephone(){
+		return telephone;
+	}
+	
+	public void setTelephone(Telephone telephone) {
+		this.telephone = telephone;
+		
+	}
+
+	
 
 }

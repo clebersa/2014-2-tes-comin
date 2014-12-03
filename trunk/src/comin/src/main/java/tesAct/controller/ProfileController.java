@@ -60,27 +60,27 @@ public class ProfileController implements Resourceable {
 				model.createTypedLiteral(profile.getFullName()));
 
 		// Adiciona nome estruturado
-		NameController nameController = new NameController(profile.getName());
+		/*NameController nameController = new NameController(profile.getName());
 		profileAsResource.addProperty(VCARD.name,
-				nameController.getAsResource(model));
+				nameController.getAsResource(model));*/
 
 		// Adiciona apelido
-		profileAsResource.addProperty(VCARD.nickname,
-				model.createTypedLiteral(profile.getNickname()));
+		/*profileAsResource.addProperty(VCARD.nickname,
+				model.createTypedLiteral(profile.getNickname()));*/
 
 		// Adiciona data de nascimento
-		profileAsResource.addProperty(VCARD.bday,
-				model.createTypedLiteral(profile.getBirthDate()));
+		/*profileAsResource.addProperty(VCARD.bday,
+				model.createTypedLiteral(profile.getBirthDate()));*/
 
 		// Adiciona gênero
-		profileAsResource.addProperty(VCARD.hasGender,
-				model.createTypedLiteral(profile.getGender()));
+		/*profileAsResource.addProperty(VCARD.hasGender,
+				model.createTypedLiteral(profile.getGender()));*/
 
 		// Adiciona a estrutura de endereço
-		AddressController addressController = new AddressController(
+		/*AddressController addressController = new AddressController(
 				profile.getAddress());
 		profileAsResource.addProperty(VCARD.adr,
-				addressController.getAsResource(model));
+				addressController.getAsResource(model));*/
 
 		// Adiciona a estrutura de email
 		EmailController emailController = new EmailController(
@@ -89,10 +89,14 @@ public class ProfileController implements Resourceable {
 				emailController.getAsResource(model));
 
 		// Adiciona a estrutura organização
-		OrganizationController organizationController = new OrganizationController(
+		/*OrganizationController organizationController = new OrganizationController(
 				profile.getOrganization());
 		profileAsResource.addProperty(VCARD.organization,
-				organizationController.getAsResource(model));
+				organizationController.getAsResource(model));*/
+		TelephoneController telephoneController = new TelephoneController (
+				profile.getTelephone());
+		profileAsResource.addProperty(VCARD.telephone,
+		telephoneController.getAsResource(model));
 		
 		// VOU FAZER DO JEITO MAIS FÁCIL DPS COLOCA O CONTROLLER.
 		ArrayList<Interest> interests = profile.getInterests();
