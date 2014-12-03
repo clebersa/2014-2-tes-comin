@@ -1,0 +1,167 @@
+<http://Letícia/>
+      <http://www.w3.org/2006/vcard/ns#adr>
+              [ <http://www.w3.org/2006/vcard/ns#country-name>
+                        "Brasil"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#locality>
+                        "Goiânia"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#postal-code>
+                        "74690-470"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#region>
+                        "GO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#street-address>
+                        "Rua R 22"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#bday>
+              "1992-11-03T02:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://www.w3.org/2006/vcard/ns#email>
+              [ <http://www.w3.org/2006/vcard/ns#label>
+                        "gmail"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#value>
+                        "leticianb1@gmail.com"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#fn>
+              "Letícia Nunes Borges"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#hasGender>
+              "Feminino"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#name>
+              [ <http://www.w3.org/2006/vcard/ns#additional-name>
+                        "Borges"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#family-name>
+                        "Nunes"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#given-name>
+                        "Letícia"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#nickname>
+              "Big"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#organization>
+              [ <http://www.w3.org/2006/vcard/ns#organization-name>
+                        "Multidata"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#role>
+                        "Estagiária de Desenvolvimento Java"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] .
+
+<http://Cleber/>
+      <http://www.w3.org/2006/vcard/ns#adr>
+              [ <http://www.w3.org/2006/vcard/ns#country-name>
+                        "Brasil"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#locality>
+                        "Goiânia"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#postal-code>
+                        "74690-470"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#region>
+                        "GO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#street-address>
+                        "Rua R 22"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#bday>
+              "1993-03-07T03:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://www.w3.org/2006/vcard/ns#email>
+              [ <http://www.w3.org/2006/vcard/ns#label>
+                        "gmail"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#value>
+                        "cleber.93cd@gmail.com"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#fn>
+              "Cleber de Souza Alcântara"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#hasGender>
+              "Masculino"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#name>
+              [ <http://www.w3.org/2006/vcard/ns#additional-name>
+                        "Alcântara"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#family-name>
+                        "de Souza"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#given-name>
+                        "Cleber"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#nickname>
+              "Clebin"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#organization>
+              [ <http://www.w3.org/2006/vcard/ns#organization-name>
+                        "UFG"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#role>
+                        "Assistente de Desenvolvimento"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] .
+
+<http://Larissa.Angélica/>
+      <http://www.w3.org/2006/vcard/ns#adr>
+              [ <http://www.w3.org/2006/vcard/ns#country-name>
+                        "Brasil"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#locality>
+                        "Goiânia"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#postal-code>
+                        "74690-470"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#region>
+                        "GO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#street-address>
+                        "R 22"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#bday>
+              "1990-09-12T03:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://www.w3.org/2006/vcard/ns#email>
+              [ <http://www.w3.org/2006/vcard/ns#label>
+                        "gmail"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#value>
+                        "larissamean@gmail.com"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#fn>
+              "Larissa Angélica Siqueira Nunes"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#hasGender>
+              "Feminino"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#name>
+              [ <http://www.w3.org/2006/vcard/ns#additional-name>
+                        "Nunes"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#family-name>
+                        "Siqueira"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#given-name>
+                        "Larissa Angélica"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#nickname>
+              "Sem Apelido"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#organization>
+              [ <http://www.w3.org/2006/vcard/ns#organization-name>
+                        "UFG"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#role>
+                        "Estudante"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] .
+
+<http://Samuel.Junio/>
+      <http://www.w3.org/2006/vcard/ns#adr>
+              [ <http://www.w3.org/2006/vcard/ns#country-name>
+                        "Brasil"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#locality>
+                        "Goiânia"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#postal-code>
+                        "74690-020"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#region>
+                        "Goiás"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#street-address>
+                        "Av. Contorno, 109"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#bday>
+              "1994-01-04T02:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://www.w3.org/2006/vcard/ns#email>
+              [ <http://www.w3.org/2006/vcard/ns#label>
+                        "gmail"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#value>
+                        "almeida.samuel.junio@gmail.com"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#fn>
+              "Samuel Junio de Almeida Pires"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#hasGender>
+              "Masculino"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#name>
+              [ <http://www.w3.org/2006/vcard/ns#additional-name>
+                        "Pires"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#family-name>
+                        "de Almeida"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#given-name>
+                        "Samuel Junio"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] ;
+      <http://www.w3.org/2006/vcard/ns#nickname>
+              "Samuca"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.w3.org/2006/vcard/ns#organization>
+              [ <http://www.w3.org/2006/vcard/ns#organization-name>
+                        "UFG"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                <http://www.w3.org/2006/vcard/ns#role>
+                        "Estudante"^^<http://www.w3.org/2001/XMLSchema#string>
+              ] .
