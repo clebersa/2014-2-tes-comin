@@ -3,6 +3,8 @@ package v2.controller;
 import java.io.File;
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 
 import tesAct.ontologies.Foaf;
@@ -16,6 +18,7 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -75,7 +78,7 @@ public class GroupController {
 		}
 	}
 
-	private static ArrayList<Resource> search(ArrayList<OntClass> topics,
+	private ArrayList<Resource> search(ArrayList<OntClass> topics,
 			Model model) {
 
 		String queryString = "PREFIX rel:<http://www.semanticweb.org/ontologies/2014/5/foaf.owl#>"
@@ -89,7 +92,7 @@ public class GroupController {
 		}
 
 		queryString = queryString + " }";
-
+		
 		String schemaOntology = "src/main/java/tesAct/ontologies/foaf.owl";
 		Model schema = FileManager.get().loadModel(
 				"src/main/java/tesAct/ontologies/foaf.owl");
