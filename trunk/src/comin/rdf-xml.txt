@@ -1,56 +1,39 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.w3.org/2006/vcard/ns#" > 
-  <rdf:Description rdf:about="http://Cleber/">
-    <j.0:telephone rdf:nodeID="A0"/>
-    <j.0:email rdf:nodeID="A1"/>
-    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleber de Souza Alcântara</j.0:fn>
-  </rdf:Description>
+    xmlns:j.0="http://www.semanticweb.org/ontologies/2013/10/foaf.owl#"
+    xmlns:j.1="http://www.semanticweb.org/ontologies/2014/5/relationship.owl#" > 
   <rdf:Description rdf:nodeID="A0">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixo</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">39244457</j.0:value>
+    <j.0:topic rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#B_1_4_1_Optimization"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixo</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33333333</j.0:value>
+  <rdf:Description rdf:about="http://Cleber/">
+    <j.1:wouldLikeToKnow rdf:resource="http://Letícia/"/>
+    <j.1:wouldLikeToKnow rdf:resource="http://Larissa/"/>
+    <j.0:member rdf:nodeID="A0"/>
+    <j.1:wouldLikeToKnow rdf:resource="http://Samuel/"/>
+    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#B_1_4_0_Languages_And_Compilers"/>
+    <j.0:mbox>cleber.93cd@gmail.com</j.0:mbox>
+    <j.0:phone>(62)1029-3948</j.0:phone>
+    <j.0:name>Cleber</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://Samuel/">
+    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#B_2_4_High_Speed_Arithmetic"/>
+    <j.0:member rdf:nodeID="A0"/>
+    <j.0:mbox>almeida.samuel.junio@gmail.com</j.0:mbox>
+    <j.0:phone>(62)2938-4756</j.0:phone>
+    <j.0:name>Samuel</j.0:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://Letícia/">
-    <j.0:telephone rdf:nodeID="A3"/>
-    <j.0:email rdf:nodeID="A4"/>
-    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Letícia Nunes Borges</j.0:fn>
+    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#C_0_General"/>
+    <j.0:member rdf:nodeID="A0"/>
+    <j.0:mbox>leticia_nb1@hotmail.com</j.0:mbox>
+    <j.0:phone>(62)5647-3829</j.0:phone>
+    <j.0:name>Letícia</j.0:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larissamean@gmail.com</j.0:value>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://Larissa.Angélica/">
-    <j.0:telephone rdf:nodeID="A6"/>
-    <j.0:email rdf:nodeID="A5"/>
-    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larissa Angélica Siqueira Nunes</j.0:fn>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cel</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9502575</j.0:value>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leticianb1@gmail.com</j.0:value>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">almeida.samuel.junio@gmail.com</j.0:value>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gmail</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleber.93cd@gmail.com</j.0:value>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://Samuel.Junio/">
-    <j.0:telephone rdf:nodeID="A2"/>
-    <j.0:email rdf:nodeID="A7"/>
-    <j.0:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuel Junio de Almeida Pires</j.0:fn>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cel</j.0:label>
-    <j.0:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">93924664</j.0:value>
+  <rdf:Description rdf:about="http://Larissa/">
+    <j.0:topic_interest rdf:resource="http://linkserver.icmc.usp.br/ckonto/acm#D_1_2_Automatic_Programming"/>
+    <j.0:member rdf:nodeID="A0"/>
+    <j.0:mbox>larissamean@gmail.com</j.0:mbox>
+    <j.0:phone>(62)4738-2910</j.0:phone>
+    <j.0:name>Larissa</j.0:name>
   </rdf:Description>
 </rdf:RDF>

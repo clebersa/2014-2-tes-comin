@@ -1,12 +1,12 @@
-package v2.controller;
+package controller;
 
 import java.io.File;
 import java.util.ArrayList;
 
-import org.mindswap.pellet.jena.PelletReasonerFactory;
+import ontologies.Foaf;
+import ontologies.Relationship;
 
-import v2.ontologies.Foaf;
-import v2.ontologies.Relationship;
+import org.mindswap.pellet.jena.PelletReasonerFactory;
 
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
@@ -85,9 +85,9 @@ public class GroupController {
 
 		queryString = queryString + " }";
 		
-		String schemaOntology = "src/main/java/v2/ontologies/foaf.owl";
+		String schemaOntology = "src/main/java/ontologies/foaf.owl";
 		Model schema = FileManager.get().loadModel(
-				"src/main/java/v2/ontologies/foaf.owl");
+				"src/main/java/ontologies/foaf.owl");
 		// InfModel infModel = ModelFactory.createRDFSModel(schema, model);
 
 		Reasoner reasoner = ReasonerRegistry.getOWLMicroReasoner();

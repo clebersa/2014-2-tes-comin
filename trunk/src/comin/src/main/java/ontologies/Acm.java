@@ -1,4 +1,4 @@
-package v2.ontologies; /* CVS $Id: $ */
+package ontologies; /* CVS $Id: $ */
  
 import com.hp.hpl.jena.rdf.model.*;
 import com.hp.hpl.jena.ontology.*;

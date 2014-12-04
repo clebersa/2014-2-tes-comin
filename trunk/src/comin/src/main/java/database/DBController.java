@@ -1,4 +1,4 @@
-package v2.database;
+package database;
 
 import com.hp.hpl.jena.query.Dataset;
 import com.hp.hpl.jena.query.Query;
