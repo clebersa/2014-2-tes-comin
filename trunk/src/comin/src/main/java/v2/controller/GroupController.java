@@ -16,7 +16,6 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -79,7 +78,6 @@ public class GroupController {
 				+ "SELECT ?Person " + "WHERE {";
 
 		for (OntClass topic : topics) {
-			System.out.println(topic);
 			queryString = queryString
 					+ " ?Person <http://www.semanticweb.org/ontologies/2013/10/foaf.owl#topic_interest> <"
 					+ topic + "> .";

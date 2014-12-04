@@ -84,7 +84,6 @@ public class PersonController {
 	 * Deleta um interesse da pessoa
 	 * */
 	public void delInterest(OntClass interest, Model model) {
-		// TO TEST
 		model.removeAll(person, Foaf.topic_interest, interest);
 	}
 
