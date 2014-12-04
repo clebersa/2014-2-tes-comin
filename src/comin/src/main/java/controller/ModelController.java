@@ -9,48 +9,47 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 public class ModelController {
 
 	/**
-	 * The model.
+	 * O modelo.
 	 */
+
 	private Model model;
 
 	/**
-	 * Creates a new model controller and a new model using a ModelFactory.
+	 * Cria um novo ModelController e um novo modelo usando a ModelFactory.
 	 */
 	public ModelController() {
 		this.model = ModelFactory.createDefaultModel();
 	}
 
 	/**
-	 * Creates a new model controller.
+	 * Cria um novo ModelController
 	 * 
-	 * @param model
-	 *            The model.
+	 * @param model Modelo RDF
 	 */
 	public ModelController(Model model) {
 		this.model = model;
 	}
 
 	/**
-	 * Gets the model.
+	 * Retorna o modelo.
 	 * 
-	 * @return The model.
+	 * @return model Modelo RDF
 	 */
 	public Model getModel() {
 		return model;
 	}
 
 	/**
-	 * Sets the model.
+	 * Define o modelo
 	 * 
-	 * @param model
-	 *            The model to set.
+	 * @param model Modelo RDF
 	 */
 	public void setModel(Model model) {
 		this.model = model;
 	}
 
 	/**
-	 * Prints the model in the screen and in a file using the RDF/XML format.
+	 * Imprime o modelo na tela e em um arquivo usando o formato RDF/XML.
 	 */
 	public void printRDF() {
 		String outputFile = "rdf-xml.txt";
@@ -68,7 +67,7 @@ public class ModelController {
 	}
 
 	/**
-	 * Prints the model in the screen and in a file using the TURTLE format.
+	 * Imprime o modelo na tela e em um arquivo usando o formato TURTLE.
 	 */
 	public void printTurle() {
 		String outputFile = "turtle.txt";
