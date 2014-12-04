@@ -1,15 +1,11 @@
 package controller;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import ontologies.Foaf;
 import ontologies.Relationship;
 
-import org.mindswap.pellet.jena.PelletReasonerFactory;
-
 import com.hp.hpl.jena.ontology.OntClass;
-import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
@@ -20,8 +16,6 @@ import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.reasoner.Reasoner;
-import com.hp.hpl.jena.reasoner.ReasonerRegistry;
 import com.hp.hpl.jena.util.FileManager;
 
 public class GroupController {
@@ -141,39 +135,26 @@ public class GroupController {
 	 */
 	private void search(ArrayList<OntClass> topics) {
 
-		String queryString = "PREFIX rel:<http://www.semanticweb.org/ontologies/2014/5/foaf.owl#>"
-				+ "SELECT ?Person " + "WHERE {";
+		String queryString = "SELECT ?Person " + "WHERE {";
 
 		for (OntClass topic : topics) {
 			queryString = queryString
-					+ " ?Person <http://www.semanticweb.org/ontologies/2013/10/foaf.owl#topic_interest> <"
-					+ topic + "> .";
+					+ "?Person <http://www.semanticweb.org/ontologies/2013/10/foaf.owl#topic_interest> ?topic ."
+					+ "?topic <http://www.w3.org/2000/01/rdf-schema#subClassOf> <"+ topic + "> ;";
 		}
 
 		queryString = queryString + " }";
-
-		String schemaOntology = "src/main/java/ontologies/foaf.owl";
-		Model schema = FileManager.get().loadModel(
-				"src/main/java/ontologies/foaf.owl");
-		// InfModel infModel = ModelFactory.createRDFSModel(schema, model);
-
-		Reasoner reasoner = ReasonerRegistry.getOWLMicroReasoner();
-		reasoner = reasoner.bindSchema(schema);
-		InfModel infModel = ModelFactory.createInfModel(reasoner, model);
+		
 		/**
-		 * Criação do modelo ontológico utilizando o Pellet
+		 * Realiza a inferências
 		 * */
-		OntModel ont = ModelFactory.createOntologyModel(
-				PelletReasonerFactory.THE_SPEC, null);
-		ont.read(new File(schemaOntology).toURI().toString(), "RDF/XML");
 
-		reasoner = ReasonerRegistry.getOWLReasoner();
-		reasoner = reasoner.bindSchema(ont);
+		Model schema = FileManager.get().loadModel("src/main/java/ontologies/foaf.owl");
+		InfModel infModel = ModelFactory.createRDFSModel(schema, model);
+		
+		schema = FileManager.get().loadModel("src/main/java/ontologies/acm.owl");
+		infModel = ModelFactory.createRDFSModel(schema, infModel);
 
-		/**
-		 * Realiza a inferência
-		 * */
-		infModel = ModelFactory.createInfModel(reasoner, model);
 
 		Query query = QueryFactory.create(queryString);
 		/**
@@ -186,10 +167,12 @@ public class GroupController {
 		 * ResultSet
 		 * */
 		ResultSet results = qe.execSelect();
+		
+		 //ResultSetFormatter.out(results);
 
 		/**
 		 * Formatador dos resultados de uma conslta
-		 * ResultSetFromatter.out(results);
+		
 		 * */
 		while (results.hasNext()) {
 			QuerySolution querySolution = (QuerySolution) results.next();
