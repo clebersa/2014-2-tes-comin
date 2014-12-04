@@ -26,6 +26,8 @@ import com.hp.hpl.jena.util.FileManager;
 
 public class GroupController {
 	private Resource group;
+	private ArrayList<Resource> members;
+	private Model model;
 	/**
 	 * Cria um novo GroupController
 	 * 
@@ -47,8 +49,10 @@ public class GroupController {
 	public GroupController(ArrayList<OntClass> topics, Model model,
 			Resource searcher) {
 		this(model.createResource());
-
-		ArrayList<Resource> members = search(topics, model);
+		this.model = model;
+		
+		members = new ArrayList<Resource>();
+		search(topics);
 
 		for (Resource member : members) {
 			addMember(member);
@@ -57,7 +61,7 @@ public class GroupController {
 		for (OntClass topic : topics) {
 			addTopic(topic);
 		}
-		makeWLTK(searcher, members);
+		makeWLTK(searcher);
 	}
 	/**
 	 * Retorna um recurso grupo.
@@ -66,6 +70,15 @@ public class GroupController {
 	public Resource getGroup() {
 		return group;
 	}
+	
+	public void removeGroup(){
+		for(Resource member : members){
+			model.remove(member, Foaf.member, group);
+		}
+		members.clear();
+		group.removeAll(Foaf.topic);
+	}
+	
 	/**
 	 * Adiciona um membro ao grupo.
 	 * */
@@ -85,7 +98,7 @@ public class GroupController {
 	 * Cria relacionamentos "Gostaria de conhecer" a partir de quem efetuou a
 	 * pesquisa.
 	 * */
-	public void makeWLTK(Resource searcher, ArrayList<Resource> members) {
+	public void makeWLTK(Resource searcher) {
 		for(Resource member: members){
 			if (member.getURI() != searcher.getURI()) {
 				searcher.addProperty(Relationship.wouldLikeToKnow, member);
@@ -93,8 +106,7 @@ public class GroupController {
 		}
 	}
 
-	private ArrayList<Resource> search(ArrayList<OntClass> topics,
-			Model model) {
+	private void search(ArrayList<OntClass> topics) {
 
 		String queryString = "PREFIX rel:<http://www.semanticweb.org/ontologies/2014/5/foaf.owl#>"
 				+ "SELECT ?Person " + "WHERE {";
@@ -147,14 +159,10 @@ public class GroupController {
 		* Formatador dos resultados de uma conslta
 		* ResultSetFromatter.out(results);
 		* */
-		ArrayList<Resource> persons = new ArrayList<Resource>();
-
 		while (results.hasNext()) {
 			QuerySolution querySolution = (QuerySolution) results.next();
 			Resource temp = querySolution.getResource("Person");
-			persons.add(temp);
+			members.add(temp);
 		}
-
-		return persons;
 	}
 }
