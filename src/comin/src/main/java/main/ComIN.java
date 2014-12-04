@@ -17,8 +17,8 @@ public class ComIN {
 		ModelController modelController = new ModelController();
 		
 		ArrayList<OntClass> cleberInterests = new ArrayList<OntClass>();
-		cleberInterests.add(Acm.B_1_4_0_Languages_And_Compilers);
-		cleberInterests.add(Acm.B_1_4_1_Optimization);
+		cleberInterests.add(Acm.B_1_4_Microprogram_Design_Aids);
+		cleberInterests.add(Acm.B_2_4_1_Cost_Performance);
 		PersonController cleberController = new PersonController(
 				"Cleber", 
 				"(62)1029-3948", 
@@ -27,18 +27,18 @@ public class ComIN {
 				modelController.getModel());
 		
 		ArrayList<OntClass> samuelInterests = new ArrayList<OntClass>();
-		samuelInterests.add(Acm.B_1_4_1_Optimization);
+		samuelInterests.add(Acm.B_1_4_Microprogram_Design_Aids);
 		samuelInterests.add(Acm.B_2_4_High_Speed_Arithmetic);
 		PersonController samuelController = new PersonController(
 				"Samuel", 
 				"(62)2938-4756", 
 				"almeida.samuel.junio@gmail.com",
-				samuelInterests, 
+				samuelInterests,
 				modelController.getModel());
 		
 		ArrayList<OntClass> leticiaInterests = new ArrayList<OntClass>();
 		leticiaInterests.add(Acm.B_1_4_1_Optimization);
-		leticiaInterests.add(Acm.C_0_General);
+		leticiaInterests.add(Acm.B_2_4_1_Cost_Performance);
 		PersonController leticiaController = new PersonController(
 				"Letícia",
 				"(62)5647-3829", 
@@ -48,7 +48,7 @@ public class ComIN {
 		
 		ArrayList<OntClass> larissaInterests = new ArrayList<OntClass>();
 		larissaInterests.add(Acm.B_1_4_1_Optimization);
-		larissaInterests.add(Acm.D_1_2_Automatic_Programming);
+		larissaInterests.add(Acm.D_2_8_2_Process_Metrics);
 		PersonController larissaController = new PersonController(
 				"Larissa", 
 				"(62)4738-2910", 
@@ -58,23 +58,33 @@ public class ComIN {
 		
 		//modelController.printRDF();
 		
-		DBController dbController = new DBController();
-		dbController.storeModel(modelController.getModel());
-		dbController.removeAll();
+		// CHAMADA DE MÉTODOS QUE SALVA O MODELO NO BANCO DE DADOS
+		//DBController dbController = new DBController();
+		//dbController.storeModel(modelController.getModel());
+		//dbController.removeAll();
 		
 		ArrayList<OntClass> searchInterests = new ArrayList<OntClass>();
-		searchInterests.add(Acm.B_1_4_1_Optimization);
-		GroupController groupController = new GroupController(searchInterests, 
-				modelController.getModel(), cleberController.getPerson());
+		searchInterests.add(Acm.B_1_4_Microprogram_Design_Aids);
 		
-		cleberController.delInterest(Acm.B_1_4_1_Optimization, modelController.getModel());
+		GroupController groupController = new GroupController(searchInterests, 
+				modelController.getModel(), leticiaController.getPerson());
+		
+		searchInterests = new ArrayList<OntClass>();
+		searchInterests.add(Acm.B_2_4_High_Speed_Arithmetic);
+		
+		groupController = new GroupController(searchInterests, 
+				modelController.getModel(), leticiaController.getPerson());
+		
 		modelController.printRDF();
+		
+		/*cleberController.delInterest(Acm.B_1_4_1_Optimization, modelController.getModel());
+		//modelController.printRDF();
 		leticiaController.delInterest(Acm.B_1_4_1_Optimization, modelController.getModel());
-		modelController.printRDF();
+		//modelController.printRDF();
 		samuelController.delInterest(Acm.B_1_4_1_Optimization, modelController.getModel());
-		modelController.printRDF();
+		//modelController.printRDF();
 		larissaController.delInterest(Acm.B_1_4_1_Optimization, modelController.getModel());
-		modelController.printRDF();
+		//modelController.printRDF();*/
 		
 	}
 
