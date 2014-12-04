@@ -1,9 +1,9 @@
-package v2.controller;
+package controller;
 
 import java.util.ArrayList;
 
-import v2.ontologies.Foaf;
-import v2.ontologies.Relationship;
+import ontologies.Foaf;
+import ontologies.Relationship;
 
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.rdf.model.Model;

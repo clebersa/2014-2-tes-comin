@@ -1,4 +1,4 @@
-package v2.database;
+package database;
 
 import java.sql.SQLException;
 

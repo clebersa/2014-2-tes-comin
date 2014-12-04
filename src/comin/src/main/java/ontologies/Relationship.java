@@ -1,4 +1,4 @@
-package v2.ontologies;
+package ontologies;
 
 /* CVS $Id: $ */
  

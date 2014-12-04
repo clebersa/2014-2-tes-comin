@@ -1,4 +1,4 @@
-package v2.controller;
+package controller;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
