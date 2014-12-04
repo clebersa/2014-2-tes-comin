@@ -26,10 +26,23 @@ import com.hp.hpl.jena.util.FileManager;
 
 public class GroupController {
 	private Resource group;
+	/**
+	 * Cria um novo GroupController
+	 * 
+	 * @param Resource
+	 * 
+	 * 
+	 * 
+	 * **/
 
 	public GroupController(Resource group) {
 		this.group = group;
 	}
+	/**
+	 * Cria um novo recurso usando os parâmetros e chama o outro método
+	 * construtor passando esse recurso.
+	 * 
+	 * **/
 
 	public GroupController(ArrayList<OntClass> topics, Model model,
 			Resource searcher) {
@@ -46,21 +59,30 @@ public class GroupController {
 		}
 		makeWLTK(searcher, members);
 	}
+	/**
+	 * Retorna um recurso grupo.
+	 * */
 
 	public Resource getGroup() {
 		return group;
 	}
+	/**
+	 * Adiciona um membro ao grupo.
+	 * */
 
 	public void addMember(Resource member) {
 		member.addProperty(Foaf.member, group);
 	}
+	/**
+	 * Adiciona um tópico ao grupo..
+	 * */
 
 	public void addTopic(OntClass topic) {
 		group.addProperty(Foaf.topic, topic);
 	}
 
 	/**
-	 * Cria relacionamentos "Gostaria de conhecer" a partir de quem efeutou a
+	 * Cria relacionamentos "Gostaria de conhecer" a partir de quem efetuou a
 	 * pesquisa.
 	 * */
 	public void makeWLTK(Resource searcher, ArrayList<Resource> members) {
@@ -93,31 +115,38 @@ public class GroupController {
 		Reasoner reasoner = ReasonerRegistry.getOWLMicroReasoner();
 		reasoner = reasoner.bindSchema(schema);
 		InfModel infModel = ModelFactory.createInfModel(reasoner, model);
-
-		// Criação do modelo ontológico utilizando o Pellet
-		OntModel ont = ModelFactory.createOntologyModel(
+		/**
+		 * Criação do modelo ontológico utilizando o Pellet
+		 * */
+			OntModel ont = ModelFactory.createOntologyModel(
 				PelletReasonerFactory.THE_SPEC, null);
 		ont.read(new File(schemaOntology).toURI().toString(), "RDF/XML");
 
 		reasoner = ReasonerRegistry.getOWLReasoner();
 		reasoner = reasoner.bindSchema(ont);
-
-		// Realiza a inferência
+		
+		/**
+		 * Realiza a inferência
+		 * */
 		infModel = ModelFactory.createInfModel(reasoner, model);
 
 		Query query = QueryFactory.create(queryString);
-
-		// Interface para a execução de uma única consulta sobre os GRAFOS
-		// retornados do BD
+		/**
+		 * Interface para a execução de uma única consulta sobre os Grafos
+		 * retornados do BD
+		 * */
 		QueryExecution qe = QueryExecutionFactory.create(query, infModel);
-
-		// Executa a consulta definida na string SPARQL e armazena em um
-		// ResultSet
-		ResultSet results = qe.execSelect();
-
-		// Formatador dos resultados de uma consulta
-		// ResultSetFormatter.out(results);
-
+		/**
+		 * Executa a consulta definida na string SPARQL e amarzena em um
+		 * ResultSet
+		 * */
+			ResultSet results = qe.execSelect();
+			
+		
+		/**
+		* Formatador dos resultados de uma conslta
+		* ResultSetFromatter.out(results);
+		* */
 		ArrayList<Resource> persons = new ArrayList<Resource>();
 
 		while (results.hasNext()) {
