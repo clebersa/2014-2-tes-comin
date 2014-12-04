@@ -15,24 +15,28 @@ public class PersonController {
 	/**
 	 * Cria um novo PersonController
 	 * 
-	 * @param Resource
-	 * 
-	 * 
-	 * 
-	 * **/
+	 * @param person
+	 *            Pessoa é quem faz uso do sistema.
+	 */
 	public PersonController(Resource person) {
 		this.person = person;
 	}
 
 	/**
 	 * Cria um novo recurso usando os parâmetros e chama o outro método
-	 * construtor passando esse recurso.
+	 * construtor passando esse recurso
 	 * 
-	 * @param Nome
-	 *            da Pessoa, Telefone, Email, Interesses e Modelo para adicionar
-	 *            o recurso criado.
-	 * 
-	 * **/
+	 * @param name
+	 *            Nome da pessoa.
+	 * @param phone
+	 *            Telefone da pessoa.
+	 * @param email
+	 *            E-mail da pessoa.
+	 * @param interests
+	 *            Áreas de interesse da pessoa.
+	 * @param model
+	 *            Modelo RDF é onde a pessoa vai ser criada.
+	 */
 	public PersonController(String name, String phone, String email,
 			ArrayList<OntClass> interests, Model model) {
 		this(model.createResource("http://" + name + "/")
@@ -45,28 +49,36 @@ public class PersonController {
 
 	/**
 	 * Retorna um recurso Pessoa.
-	 * */
+	 * 
+	 * @return person Pessoa é quem faz uso do sistema.
+	 */
 	public Resource getPerson() {
 		return person;
 	}
 
 	/**
 	 * Retorna o nome da pessoa
-	 * */
+	 * 
+	 * @return name Nome é o nome da pessoa.
+	 */
 	public String getName() {
 		return person.getProperty(Foaf.name).getString();
 	}
 
 	/**
 	 * Retorna o telefone da pessoa
-	 * */
+	 * 
+	 * @return phone Telefone é telefone da pessoa.
+	 */
 	public String getPhone() {
 		return person.getProperty(Foaf.phone).getString();
 	}
 
 	/**
 	 * Retorna o email da pessoa
-	 * */
+	 * 
+	 * @return mbox É a caixa de e-mail da pessoa.
+	 */
 	public String getEmail() {
 		return person.getProperty(Foaf.mbox).getString();
 	}
@@ -74,24 +86,35 @@ public class PersonController {
 	/**
 	 * Adiciona um interesse fornecido a pessoa.
 	 * 
-	 * @param Interesse
-	 * */
+	 * @param interest
+	 *            Interesse é uma área de conhecimento na qual a pessoa tem
+	 *            interesse.
+	 */
 	public void addInterest(OntClass interest) {
 		person.addProperty(Foaf.topic_interest, interest);
 	}
 
 	/**
 	 * Deleta um interesse da pessoa
-	 * */
+	 * 
+	 * @param interest
+	 *            Interesse é uma área de conhecimento na qual a pessoa tem
+	 *            interesse.
+	 * @param model
+	 *            Modelo RDF é onde a pessoa vai ser criada.
+	 */
 	public void delInterest(OntClass interest, Model model) {
 		model.removeAll(person, Foaf.topic_interest, interest);
 	}
 
 	/**
-	 * Adiciona um pessoa fornecida como conhecida, a partir da propriedade
-	 * "knows" da ontologia Foafr
+	 * Adiciona uma pessoa fornecida como conhecida, a partir da propriedade
+	 * "knows" da ontologia Foaf
 	 * 
-	 * */
+	 * @param known
+	 * @param model
+	 *            Modelo RDF é onde a pessoa vai ser criada.
+	 */
 	public void addKnown(Resource known, Model model) {
 		model.removeAll(person, Relationship.wouldLikeToKnow, known);
 		person.addProperty(Foaf.knows, known);
