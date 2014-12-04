@@ -133,6 +133,12 @@ public class GroupController {
 		}
 	}
 
+	/**
+	 * Seleção de pessoas que possuem interesses selecionados.
+	 * 
+	 * @param topics
+	 *            Tópicos são áreas de interesse
+	 */
 	private void search(ArrayList<OntClass> topics) {
 
 		String queryString = "PREFIX rel:<http://www.semanticweb.org/ontologies/2014/5/foaf.owl#>"
